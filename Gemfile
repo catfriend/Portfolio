@@ -22,5 +22,6 @@ group :doc do
   gem 'sdoc', require: false
 
 group :production
+gem 'rails_12factor'
 gem 'pg'
 end
