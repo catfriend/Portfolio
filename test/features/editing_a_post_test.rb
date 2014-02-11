@@ -5,7 +5,7 @@ feature "EditingAPost" do
     # Given an existing post
     post = Post.create(title: "Becoming a Code Fellow", body: "Means striving for excellence.")
     visit post_path(post)
-    # When I click edit and sumite changed data
+    # When I click edit and submit changed data
     click_on "Edit"
     fill_in "Title", with: "Becoming a Web Developer"
     click_on "Update Post"
