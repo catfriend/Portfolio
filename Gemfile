@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 group :development, :test do
-  gem "minitest-rails"
   gem 'sqlite3'
 end
 
@@ -9,6 +8,7 @@ group :test do
   gem 'minitest-rails-capybara'
 end
 
+gem "minitest-rails"
 gem 'rails', '4.0.2'
 gem 'sass-rails', '~> 4.0.0'
 gem 'uglifier', '>= 1.3.0'
