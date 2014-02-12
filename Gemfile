@@ -20,8 +20,9 @@ gem 'zurb-foundation'
 
 group :doc do
   gem 'sdoc', require: false
+end
 
-group :production
-gem 'rails_12factor'
-gem 'pg'
+group :production do
+  gem 'rails_12factor'
+  gem 'pg'
 end
