@@ -2,7 +2,6 @@
   <% if @project.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@project.errors.count, "error") %> prohibited this project from being saved:</h2>
-
       <ul>
       <% @roject.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
@@ -12,13 +11,15 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+    <%= f.label :name %><br> /
+    <%= f.text_field :name %>
   </div>
+
   <div class="field">
-    <%= f.label :body %><br>
-    <%= f.text_area :body %>
+    <%= f.label :technologies_used %><br />
+    <%= f.text_area :technologies_used %>
   </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>
