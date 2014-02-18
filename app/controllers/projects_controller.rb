@@ -45,6 +45,10 @@ class ProjectsController < ApplicationController
     end
   end
 
+  def errors
+     @project = Project.find(params[:id])
+  end
+
   private
 
   def set_project
