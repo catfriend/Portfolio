@@ -2,10 +2,12 @@ source 'https://rubygems.org'
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'launchy'
 end
 
 group :test do
   gem 'minitest-rails-capybara'
+  gem 'launchy'
 end
 
 gem "minitest-rails"
@@ -18,6 +20,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'zurb-foundation'
 gem 'devise'
+
 
 group :doc do
   gem 'sdoc', require: false

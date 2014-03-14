@@ -5,13 +5,14 @@ feature "Auth::SignUp" do
   scenario "sign up" do
     # Given a registration form
     visit new_user_registration_path
-    click_on "Sign Up"
 
     # When I register with valid info
     fill_in "Email", with: "test@example.com"
     fill_in "Password", with: "password"
     fill_in "Password confirmation", with: "password"
-    click_on "Sign Up"
+    within(:css, "div#new_user_button") do
+      click_on "Sign Up"
+    end
 
     # Then I should be signed up
     page.must_have_content "Welcome! You have signed up successfully"

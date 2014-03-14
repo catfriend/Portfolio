@@ -9,17 +9,21 @@ feature "Auth::SignIn" do
     fill_in "Email", with: "test@example.com"
     fill_in "Password", with: "password"
     fill_in "Password confirmation", with: "password"
-    # Then I should be logged in
 
+    # Then I should be logged in
     page.must_have_content "Welcome Back!"
     page.wont_have_content "Goobye All!"
+  end
 
+    scenario "authorized user" do
         # Given an authorized user completes a new post form
     visit new_user_session_path
     fill_in "Email", with: users(:one).email
     fill_in "Password", with: "password"
-    click_on "Sign In"
-    visit new_post_path
+    within(:css, "div#old_user_button") do
+        click_on "Sign In"
+    end
 
+    visit new_post_path
   end
 end
