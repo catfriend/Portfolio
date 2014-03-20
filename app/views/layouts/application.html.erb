@@ -33,16 +33,6 @@
       </section>
     </nav>
 
-    <ul class="side-nav">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Posts</a></li>
-      <li><a href="#">Index</a></li>
-      <li><a href="#">Sign Up</a><li>
-      <li><a href="#">Sign In</a><li>
-      <li><a href="#">Sign Out</a><li>
-    </ul>
-
  <div id="if user_nav">
     <% if user_signed_in? %>
       Signed in as <%= current_user.email %>. Not you?
@@ -52,8 +42,6 @@
       <%= link_to "Sign In", new_user_registration_path %>
     <% end %>
   </div>
-
-
 
    <% if notice %>
       <p class="alert alert-notice"><%= notice %></p>

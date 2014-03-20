@@ -5,11 +5,6 @@ feature "CreatingAPost" do
 
         # Given an authorized user completes a new post form
     sign_in(:author)
-
-    visit new_user_session_path
-    fill_in "Email", with: users(:one).email
-    fill_in "Password", with: "password"
-    click_on "Sign In"
     visit new_post_path
     # Given a completed new post form
 
@@ -37,7 +32,7 @@ feature "CreatingAPost" do
     # When I visit the blog index page
     visit posts_path
     # Then I should not see the "New Post" button
-    page.wont_have_link_ "New Post"
+    page.wont_have_link "New Post"
   end
 
   scenario "authors can't publish" do

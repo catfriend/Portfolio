@@ -12,18 +12,27 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
   </div>
 
   <div class="field">
-    <%= f.label :technologies_used %><br />
-    <%= f.text_area :technologies_used %>
+    <%= f.label :body %><br />
+    <%= f.text_area :body %>
   </div>
+
+<% if policy(@post).publish? %>
+  <div class= "field">
+    <%= f.label :published, "Published" %>
+    <%= f.check_box :published %>
+  </div>
+  <% end %>
 
   <div class="actions">
     <%= f.submit %>
   </div>
-<% end %>
+
 
 <%= link_to 'Back', projects_path %>
+
+<% end %>

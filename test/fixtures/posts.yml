@@ -2,9 +2,35 @@ strangelove:
   title: Dr. Strangelove
   body: How I learned to stop worrying and love the bomb
   author: one
+  published: true
 
 chinatown:
   title: Forget it, Jake
   body: It's Chinatown
   author: one
+  published: true
+
+published:
+  title: Misery
+  body: I'm your number one fan.
+  author: author
+  published: true
+
+nonpublished:
+  title: Forever Unknown
+  body: Classified
+  author: author
+  published: false
+
+draftpost:
+  title: TBD
+  body: Still working on it.
+  author: author
+  published: false
+
+editorpost:
+  title: Battleship Potemkin
+  body: Reknowned for Odessa steps sequence.
+  author: editor
+  published: true
 
