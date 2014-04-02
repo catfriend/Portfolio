@@ -7,7 +7,6 @@ end
 
 group :test do
   gem 'minitest-rails-capybara'
-  gem 'launchy'
 end
 
 gem "minitest-rails"
@@ -21,6 +20,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'zurb-foundation'
 gem 'devise'
+gem 'omniauth'
+gem 'figaro'
 
 
 group :doc do
