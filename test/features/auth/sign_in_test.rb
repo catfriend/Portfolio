@@ -24,6 +24,12 @@ feature "Auth::SignIn" do
         click_on "Sign In"
     end
 
+    scenario "sign in with twitter works" do
+        visit root_path
+        click on "Sign In"
+        OmniAuth.config.test_mode = true
+        Capybara.current_session.
+
     visit new_post_path
   end
 end
