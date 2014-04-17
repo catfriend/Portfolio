@@ -1,6 +1,14 @@
 Portfolio::Application.routes.draw do
-  devise_for :users
-  resources :posts
+
+  devise_for :users,
+             controllers: {registrations: "users/registrations",
+                           passwords: "users/passwords",
+                           omniauth_callbacks: "omniauth_callbacks"}
+
+  resources :posts do
+    resources :comments
+  end
+
   resources :projects
 
   # The priority is based upon order of creation: first created -> highest priority.
