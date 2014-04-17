@@ -1,5 +1,11 @@
 source 'https://rubygems.org'
 
+gem 'zurb-foundation'
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'figaro'
+
 group :development, :test do
   gem 'sqlite3'
   gem 'launchy'
@@ -18,10 +24,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
-gem 'zurb-foundation'
-gem 'devise'
-gem 'omniauth'
-gem 'figaro'
+
 
 
 group :doc do
