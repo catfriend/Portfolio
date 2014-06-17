@@ -5,8 +5,8 @@
   # GET /posts
   # GET /posts.json
   def index
-   @posts = Post.all
- end
+   @posts = policy_scope(Post)
+  end
 
  # GET /posts/1
  # GET /posts/1.json
