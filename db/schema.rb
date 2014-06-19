@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< Updated upstream
 ActiveRecord::Schema.define(version: 20140517010212) do
+=======
+ActiveRecord::Schema.define(version: 20140423203807) do
+>>>>>>> Stashed changes
 
   create_table "comments", force: true do |t|
     t.string   "author"
