@@ -1,0 +1,14 @@
+boneheads_comment:
+  author: bonehead
+  author_url: http://bonehead.example.com
+  author_email: bonehead@bonehead.example.com
+  content: i shoot my mouth off without thinking
+  commentable: mayhem_is_good
+  commentable_type: project
+
+dimwits_comment:
+  author: dimwit
+  author_url: http://dimwit.example.com
+  author_email: dimwit@dimwit.example.com
+  content: slicing_eyeballs
+  commentable: slicing_eyeballs_is_good (Post)

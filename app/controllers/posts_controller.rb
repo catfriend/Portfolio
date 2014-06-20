@@ -5,12 +5,16 @@
   # GET /posts
   # GET /posts.json
   def index
-   @posts = Post.all
- end
+   @posts = policy_scope(Post)
+  end
 
  # GET /posts/1
  # GET /posts/1.json
  def show
+  @post = Post.find(params[:id])
+  @commentable = @post
+  @comments = @commentable.comments
+  @comment = Comment.new
  end
 
   # GET /posts/new
@@ -38,6 +42,7 @@
     current_user.posts << @post
   end
 end
+
 
   # PATCH/PUT /posts/1
   # PATCH/PUT /posts/1.json
