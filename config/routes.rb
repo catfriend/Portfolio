@@ -1,5 +1,7 @@
 Portfolio::Application.routes.draw do
 
+  resources :carrierwave_images
+
   devise_for :users,
              controllers: {
                            omniauth_callbacks: "users/omniauth_callbacks"}

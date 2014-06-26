@@ -5,6 +5,8 @@ gem 'devise'
 gem 'omniauth'
 gem 'omniauth-facebook'
 gem 'figaro'
+gem 'carrierwave'
+gem 'mini_magick'
 
 group :development, :test do
   gem 'sqlite3'
