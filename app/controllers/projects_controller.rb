@@ -1,4 +1,5 @@
 class ProjectsController < ApplicationController
+  skip_before_filter  :verify_authenticity_token
   def index
     @projects = Project.all
   end
@@ -66,6 +67,14 @@ class ProjectsController < ApplicationController
   end
 
   def project_params
-    params.require(:project).permit(:name, :technologies_used)
+    params.require(:project).permit(:name, :technologies_used, :image)
   end
+
+  #def set_carrierwave_image
+   # @carrierwave_image = CarrierwaveImage.find(params[:id])
+  #end
+
+  #def carrierwave_image_params
+   # params.require(:carrierwave_image).permit(:image, :remove_image)
+  #end
 end
