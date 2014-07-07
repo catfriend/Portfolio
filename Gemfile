@@ -7,6 +7,8 @@ gem 'omniauth-facebook'
 gem 'figaro'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'postmark-mitt'
+gem 'sidekiq'
 
 group :development, :test do
   gem 'sqlite3'
