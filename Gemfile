@@ -10,6 +10,7 @@ gem 'mini_magick'
 gem 'sidekiq'
 gem 'foreman'
 gem 'sinatra', require: false
+gem 'postmark-mitt'
 
 group :development, :test do
   gem 'sqlite3'
