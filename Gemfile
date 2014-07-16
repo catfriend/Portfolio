@@ -7,6 +7,9 @@ gem 'omniauth-facebook'
 gem 'figaro'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'sidekiq'
+gem 'foreman'
+gem 'sinatra', require: false
 
 group :development, :test do
   gem 'sqlite3'
